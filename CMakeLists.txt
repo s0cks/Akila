@@ -11,4 +11,5 @@ file(GLOB_RECURSE SOURCES src/*.c)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu99")
 
 add_executable(Akila ${HEADERS} ${SOURCES})
+target_link_libraries(Akila m)
 target_link_libraries(Akila ${CMAKE_THREAD_LIBS_INIT})
